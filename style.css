@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "NB International Regular Webfont";
+    src: url("https://db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.eot");
+    src: url("https://db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.svg#NB International Regular Webfont")format("svg");
+}
+
+@font-face {
+    font-family: rejoy;
+    src: url(/Rejouice-Headline.woff2);
+}
+html,body{
+width:100%;
+height:100%;
+
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+#page-1{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+}
+
+#cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: rgba(247, 98, 44, 0.669);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#cursor h5{
+    font-size: 1.3vw;
+    font-family: "NB International Regular Webfont";
+    font-weight: 100;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+}
+
+#page-1-content{
+    height: 100%;
+    width: 100%;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 3vw 0 3vw;
+}
+
+nav h4{
+    font-size: 1.4vw;
+    font-family: "NB International Regular Webfont";
+    font-weight: 100;
+    
+}
+
+#page-1-content h1{
+    font-family: rejoy;
+    font-size: 26vw;
+    font-weight: 100;
+    line-height: 27vw;
+}
+
+#head span{
+    display: inline-block;
+}
+
+#page-2{
+    width: 100%;
+    height: 100vh;
+
+    background-color: red;
+}
