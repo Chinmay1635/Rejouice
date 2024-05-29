@@ -3,22 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | REJOUICE®️</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- https://prismic-io.s3.amazonaws.com/rejouice/658ef98d531ac2845a270509_RJ-2-0-Videobackground_compressed.mp4 -->
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAvUlEQVR4AWJwL/AhGv+Pt3AD4tmA4uvgBkAQhsKwMzAA47hkB2KShjHqM7GJXowEyX/4jsoTKlBp0iUuXZqY7CPv/DJoFZMYZFKnAuTAk2w4gB4q4hI/cSlfAuSUxyL1LUB+eSxW3gK4xGL+CDBXcPOFObDua+qB+Ppk9wBBOMfO7TUgOzX9yc4ADQzQtjzVID0LEMMHgJfA+SKkf0N8I+K3Yv4w4o9j/kLCX8n4Syl/LecbE74145tTqD0/ACQBDyr0l4SpAAAAAElFTkSuQmCC" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
 <body>
     <div id="main">
+        <div id="menu">
+            <div id="menuContent">
+            <div id="top">
+                    <div id="vid">
+                        <h3>rejouice</h3>
+                        <video autoplay loop muted id="menu-video" src="https://prismic-io.s3.amazonaws.com/rejouice/658ef98d531ac2845a270509_RJ-2-0-Videobackground_compressed.mp4"></video>
+                        <h5><i class="ri-play-circle-fill"></i>Play Reel</h5>
+                    </div>
+                    <div id="textContent">
+                        <h2>Home</h2>
+                        <h2>Work</h2>
+                        <h2>Services & Models</h2>
+                        <h2>About</h2>
+                        <h2>Contact</h2>
+
+                    </div>
+                    <div id="close">Close</div>
+            </div>
+            <hr>
+            <div id="bottom">
+                <div id="bleft"><h4>Tomorrow's Brands, Today.™️</h4></div>
+                <div id="bright"><span>X<i class="ri-arrow-right-up-line"></i></span>
+                    <span>Instagram<i class="ri-arrow-right-up-line"></i></span>
+                    <span>LinkedIn<i class="ri-arrow-right-up-line"></i></span></div>
+            </div>
+        </div>
+    </div>
         <div id="page-1">
             <div id="cursor">
                 <h5>Play Reel</h5>
             </div>
-            <video autoplay loop muted src="https://prismic-io.s3.amazonaws.com/rejouice/658ef98d531ac2845a270509_RJ-2-0-Videobackground_compressed.mp4"></video>
+            <video id="main-vid" autoplay loop muted src="https://prismic-io.s3.amazonaws.com/rejouice/658ef98d531ac2845a270509_RJ-2-0-Videobackground_compressed.mp4"></video>
             <div id="page-1-content">
                 <nav>
                     <h4>The Venture Agency.</h4>
-                    <h4>Menu</h4>
+                    <h4 id="menubtn">Menu</h4>
                 </nav>  
                 <h1 id="head">rejouice</h1>
             </div>
@@ -26,11 +56,19 @@
         
         </div>
         <div id="page-2">
-
+            <div id="page2-top">
+                <h3>Tomorrow's Brands, Today.™️</h3>
+                <h3>Paris/San Diego</h3>
+            </div>
+            <div class="line"><div></div></div>
+            <div id="page2-text">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are a venture firm and digital agency.</h2><h2>Our mission is to transform founders' visions</h2><h2> into remarkable brands. Choose traditional</h2><h2> compensation or an equity offset through our</h2><h2> Venture Model-your vision, your decision</h2>
+            </div>
         </div>
+        <div id="page-3"></div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
