@@ -133,44 +133,66 @@ document.body,addEventListener("wheel",function(dets){
 }
 menuAnime();
 
-gsap.from("#page2-top",{
-    y:15,
-    opacity:0,
-    duration:0.2,
-    scrollTrigger:{
-        scroller:"#main",
-        trigger: "#page2-top",
-        start:"top 80%",
-        end:"top 75%",
-        // markers:true,
-        scrub:2,
-    }
-})
+function page2Anime(){
+    gsap.from("#page2-top",{
+        y:15,
+        opacity:0,
+        duration:0.2,
+        scrollTrigger:{
+            scroller:"#main",
+            trigger: "#page2-top",
+            start:"top 80%",
+            end:"top 75%",
+            // markers:true,
+            scrub:2,
+        }
+    })
+    
+    gsap.from(".line div",{
+        transform:"translateX(-200%)",
+        duration:2,
+        scrollTrigger:{
+            scroller:"#main",
+            trigger: "#page2-top",
+            start:"top 95%",
+            end:"top 75%",
+            // markers:true,
+            scrub:2,
+        }
+    })
+    
+    gsap.from("#page2-text h2",{
+        y:40,
+        opacity:0,
+        duration:1,
+        stagger:0.5,
+        scrollTrigger:{
+            scroller:"#main",
+            trigger: "#page2-top",
+            start:"top 70%",
+            end:"top 55%",
+            // markers:true,
+            scrub:2,
+        }
+    })
+}
+page2Anime();
 
-gsap.from(".line div",{
-    transform:"translateX(-200%)",
-    duration:2,
-    scrollTrigger:{
-        scroller:"#main",
-        trigger: "#page2-top",
-        start:"top 95%",
-        end:"top 75%",
-        // markers:true,
-        scrub:2,
-    }
-})
-
-gsap.from("#page2-text h2",{
-    y:40,
-    opacity:0,
-    duration:1,
-    stagger:0.5,
-    scrollTrigger:{
-        scroller:"#main",
-        trigger: "#page2-top",
-        start:"top 70%",
-        end:"top 55%",
-        // markers:true,
-        scrub:2,
-    }
-})
+function page3Anime(){
+    gsap.from("#page3-title h2",{
+        y:30,
+        duration:0.5,
+        opacity:0,
+        stagger:0.1,
+        scrollTrigger:{
+            scroller:"#main",
+            trigger: "#page3-title h2",
+            start:"top 80%",
+            end:"top 75%",
+            // markers:true,
+            scrub:2,
+        }
+    })
+    
+}
+page3Anime();
